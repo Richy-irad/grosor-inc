@@ -1,7 +1,3 @@
 export default function Projects() {
-  return (
-    <main>
-      <h1>Grosor Inc Projects</h1>
-    </main>
-  );
+  return <h1>Grosor Inc Projects</h1>;
 }
