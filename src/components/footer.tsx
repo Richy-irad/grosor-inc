@@ -7,22 +7,22 @@ import logo from "../../public/logo.png";
 
 const contacts = [
   {
-    icon: <Clock size={20} weight="bold" className="text-foreground-100" />,
+    icon: <Clock size={32} weight="bold" className="text-foreground-100" />,
     text: "Monday - Friday (9:00 am - 21:00 pm)",
     descriptor: "opening hours",
   },
   {
-    icon: <Envelope size={20} weight="bold" className="text-foreground-100" />,
+    icon: <Envelope size={32} weight="bold" className="text-foreground-100" />,
     text: "grosorinc2@gmail.com",
     descriptor: "email",
   },
   {
-    icon: <Phone size={20} weight="bold" className="text-foreground-100" />,
+    icon: <Phone size={32} weight="bold" className="text-foreground-100" />,
     text: "(514) 57205067",
     descriptor: "phone",
   },
   {
-    icon: <MapPin size={20} weight="bold" className="text-foreground-100" />,
+    icon: <MapPin size={32} weight="bold" className="text-foreground-100" />,
     text: "60 Rue du Docteur-Lortie, St. Polycarpe, J0P1X0, QC",
     descriptor: "our office",
   },
@@ -30,7 +30,7 @@ const contacts = [
 
 export default function Footer() {
   return (
-    <div className="flex gap-24 bg-dark-100 px-20">
+    <div className="flex gap-24 bg-dark-100 px-20 py-10">
       {/* company description */}
       <div className="flex flex-col gap-4 w-full">
         <div className="flex">
@@ -73,9 +73,9 @@ export default function Footer() {
         <h3 className="text-xl text-foreground-100 capitalize font-semibold">
           get in touch with us
         </h3>
-        <div className="flex flex-col gap-3 text-light-100 text-base font-semibold capitalize">
+        <div className="flex flex-col gap-3 text-white text-base font-semibold capitalize">
           {contacts.map((item, index) => (
-            <div key={index} className="flex gap-2.5 items-center">
+            <div key={index} className="flex gap-2.5 items-start">
               {item.icon}
               <div className="flex flex-col gap-2">
                 <p>{item.text}</p>

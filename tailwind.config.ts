@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        0.5: "0.5px",
+      },
       colors: {
         "dark-100": "#000000",
         "dark-200": "#40341A",
@@ -17,8 +20,8 @@ const config: Config = {
         "light-200": "#F2F2F2",
         white: "#FFFFFF",
       },
-      borderRadius: {
-        0.5: "0.5px",
+      fontSize: {
+        "3.5xl": ["2rem", "2.375rem"],
       },
     },
   },
