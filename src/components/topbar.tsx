@@ -3,7 +3,7 @@
 import { Clock, Envelope, MapPin, Phone } from "@phosphor-icons/react";
 import Button from "./button";
 
-const items = [
+const contacts = [
   {
     icon: <Clock size={20} weight="bold" className="text-foreground-100" />,
     text: "Monday - Friday (9:00 am - 21:00 pm)",
@@ -22,11 +22,11 @@ const items = [
   },
 ];
 
-export default function TopBar() {
+export default function Topbar() {
   return (
-    <div className=" hidden lg:flex justify-between px-20 w-full capitalize">
+    <div className=" hidden lg:flex justify-between px-20 w-full">
       <div className="flex">
-        {items.map((item, index) => (
+        {contacts.map((item, index) => (
           <div key={index} className="flex gap-2.5 items-center px-4 py-3">
             {item.icon}
             <p className="text-sm">{item.text}</p>

@@ -1,5 +1,9 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <h1>Welcome to Grosor Inc</h1>;
+  return (
+    <main className="h-full">
+      <h1>Welcome to Grosor Inc</h1>
+    </main>
+  );
 }

@@ -13,8 +13,8 @@ const config: Config = {
         "dark-200": "#40341A",
         "foreground-100": "#DFB652",
         "foreground-200": "#B29046",
-        "ligh-100": "D9D9D9",
-        "ligh-200": "#F2F2F2",
+        "light-100": "#D9D9D9",
+        "light-200": "#F2F2F2",
         white: "#FFFFFF",
       },
       borderRadius: {

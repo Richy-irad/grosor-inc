@@ -3,7 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-import TopBar from "@/components/topbar";
+import Topbar from "@/components/topbar";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,11 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="w-full">
-          <TopBar />
-          {children}
-        </main>
+      <body className={`${inter.className} w-full min-h-screen h-full`}>
+        <Topbar />
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );
