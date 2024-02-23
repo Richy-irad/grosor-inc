@@ -5,8 +5,12 @@ import contractorsImage from "../../public/contractors.jpg";
 import heroBackground from "../../public/hero-background.jpg";
 
 import Service from "@/components/service";
+import Project from "@/components/project";
 
 import { services } from "@/lib/services";
+import { projects } from "@/lib/projects";
+
+const featuredProjects = projects.slice(0, 6);
 
 export default function Home() {
   return (
@@ -124,6 +128,18 @@ export default function Home() {
             portfolio.
           </h2>
         </div>
+
+        <div className="grid grid-cols-3 gap-10 w-full">
+          {featuredProjects.map((project, index) => (
+            <Project key={index} project={project} />
+          ))}
+        </div>
+
+        <Button
+          type="primary"
+          href="/projects"
+          buttonText="view all projects"
+        />
       </div>
 
       {/* contact us */}
