@@ -131,7 +131,7 @@ export default function Home() {
 
         <div className="grid grid-cols-3 gap-10 w-full">
           {featuredProjects.map((project, index) => (
-            <Project key={index} project={project} />
+            <Project key={index} project={project} featured={true} />
           ))}
         </div>
 

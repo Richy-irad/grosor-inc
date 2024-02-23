@@ -1,11 +1,22 @@
 import project2Thumbnail from "../../public/project-2/thumbnail.jpeg";
 import project3Thumbnail from "../../public/project-3/thumbnail.jpeg";
+import project4Thumbnail from "../../public/project-4/thumbnail.jpeg";
 import project5Thumbnail from "../../public/project-5/thumbnail.jpeg";
 import project6Thumbnail from "../../public/project-6/thumbnail.jpeg";
+import project7Thumbnail from "../../public/project-7/thumbnail.jpeg";
+import project11Thumbnail from "../../public/project-11/thumbnail.jpeg";
+import project13Thumbnail from "../../public/project-13/thumbnail.jpeg";
+import project14Thumbnail from "../../public/project-14/thumbnail.jpeg";
 import project15Thumbnail from "../../public/project-15/thumbnail.jpeg";
 import project16Thumbnail from "../../public/project-16/thumbnail.jpeg";
 
 export const projects = [
+  {
+    title: "Interior finish of a restaurant",
+    thumbnail: project6Thumbnail,
+    gallery: [],
+    tags: [],
+  },
   {
     title: "Finishing an entire basement",
     thumbnail: project16Thumbnail,
@@ -26,12 +37,6 @@ export const projects = [
     tags: [],
   },
   {
-    title: "Interior finish of a restaurant",
-    thumbnail: project6Thumbnail,
-    gallery: [],
-    tags: [],
-  },
-  {
     title:
       "Finishing a basement with a family room, bedroom, and ceramic bathroom",
     thumbnail: project5Thumbnail,
@@ -44,64 +49,34 @@ export const projects = [
     gallery: [],
     tags: [],
   },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   thumbnail: "",
-  //   gallery: [],
-  //   tags: [],
-  // },
+  {
+    title: "Renovation and extension of a patio and deck",
+    thumbnail: project4Thumbnail,
+    gallery: [],
+    tags: [],
+  },
+  {
+    title: "Finishing an entire basement",
+    thumbnail: project7Thumbnail,
+    gallery: [],
+    tags: [],
+  },
+  {
+    title: "Renovation of a basement",
+    thumbnail: project13Thumbnail,
+    gallery: [],
+    tags: [],
+  },
+  {
+    title: "Finishing an entire basement",
+    thumbnail: project14Thumbnail,
+    gallery: [],
+    tags: [],
+  },
+  {
+    title: "Renovation and extension of a patio for a residential house",
+    thumbnail: project11Thumbnail,
+    gallery: [],
+    tags: [],
+  },
 ];
