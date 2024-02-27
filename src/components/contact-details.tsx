@@ -29,7 +29,7 @@ const contacts = [
 export default function ContactDetails() {
   return (
     <Tab.Group vertical>
-      <div className="flex gap-5 w-[894px]">
+      <div className="flex flex-col md:flex-row gap-5 w-full px-5 lg:w-[894px]">
         {/* tabs list */}
         <Tab.List className="basis-1/4 grow-0 shrink-0 flex flex-col">
           <Tab as={Fragment}>
@@ -37,7 +37,7 @@ export default function ContactDetails() {
               <button
                 type="button"
                 className={clsx(
-                  "capitalize px-7 py-4 text-light-100 hover:text-white hover:bg-foreground-200/50 outline-none text-start w-full",
+                  "capitalize px-7 py-4 md:text-light-100 hover:text-white hover:bg-foreground-200/50 outline-none text-start w-full",
                   {
                     "text-white border-l-4 border-foreground-100 bg-foreground-200":
                       selected,
@@ -54,7 +54,7 @@ export default function ContactDetails() {
               <button
                 type="button"
                 className={clsx(
-                  "capitalize px-7 py-4 text-light-100 hover:text-white hover:bg-foreground-200/50 outline-none text-start w-full",
+                  "capitalize px-7 py-4 md:text-light-100 hover:text-white hover:bg-foreground-200/50 outline-none text-start w-full",
                   {
                     "text-white border-l-4 border-foreground-100 bg-foreground-200":
                       selected,
@@ -77,8 +77,10 @@ export default function ContactDetails() {
                     {contact.icon}
                   </div>
                   <div className="flex flex-col gap-2 w-full">
-                    <p className="text-white font-semibold">{contact.text}</p>
-                    <p className="text-light-200 font-normal capitalize">
+                    <p className="text-dark-100 md:text-white font-semibold">
+                      {contact.text}
+                    </p>
+                    <p className="text-dark-200 md:text-light-200 font-normal capitalize">
                       {contact.descriptor}
                     </p>
                   </div>

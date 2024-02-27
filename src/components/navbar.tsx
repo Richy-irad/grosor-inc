@@ -1,8 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
+
+import { List } from "@phosphor-icons/react";
 
 import logo from "../../public/logo.png";
 
@@ -26,8 +29,9 @@ const navigationItems = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   return (
-    <nav className="bg-dark-100 flex justify-between items-center px-20">
+    <nav className="bg-dark-100 flex justify-between items-center w-full px-5 py-2.5 md:py-0 md:px-10 lg:px-20">
       {/* logo and company name */}
       <div className="flex items-center">
         <div className="w-[60px] md:w-[93px] lg:w-[142px]">
@@ -40,7 +44,7 @@ export default function Navbar() {
         </div>
         <Link
           href="/"
-          className="flex flex-col gap-2.5 py-4 text-foreground-100 capitalize font-semibold"
+          className="hidden md:flex flex-col gap-2.5 py-4 text-foreground-100 capitalize font-semibold"
         >
           <span className="text-2xl">Grosor Inc.</span>
           <span>general construction contractor</span>
@@ -48,13 +52,16 @@ export default function Navbar() {
       </div>
 
       {/* links */}
-      <div className="flex">
+      <div className="hidden lg:flex">
         {navigationItems.map((item, index) => (
           <Link
             key={index}
             href={item.href}
             className={clsx(
-              "px-6 py-4 text-foreground-100 text-base font-semibold capitalize"
+              "px-6 py-4 text-foreground-100 text-base font-semibold capitalize",
+              {
+                "text-white": pathname === item.href,
+              }
             )}
           >
             {item.name}
@@ -62,7 +69,7 @@ export default function Navbar() {
         ))}
       </div>
       {/* languages buttons */}
-      <div className="flex">
+      <div className="hidden lg:flex">
         <button
           type="button"
           className="px-2.5 py-4 text-foreground-100 text-base font-semibold uppercase"
@@ -76,6 +83,12 @@ export default function Navbar() {
           en
         </button>
       </div>
+
+      <List
+        size={32}
+        weight="bold"
+        className="flex lg:hidden text-foreground-100"
+      />
     </nav>
   );
 }

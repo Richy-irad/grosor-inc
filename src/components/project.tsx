@@ -37,7 +37,7 @@ export default function Project({
           featured project
           <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
         </span>
-        <h2 className="text-2xl text-dark-100 font-semibold capitalize">
+        <h2 className="text-xl md:text-2xl text-dark-100 font-semibold capitalize">
           {project.title}
         </h2>
       </div>
