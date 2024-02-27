@@ -5,7 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 
-import { List } from "@phosphor-icons/react";
+import { Popover } from "@headlessui/react";
+
+import { List, X } from "@phosphor-icons/react";
 
 import logo from "../../public/logo.png";
 
@@ -84,11 +86,37 @@ export default function Navbar() {
         </button>
       </div>
 
-      <List
-        size={32}
-        weight="bold"
-        className="flex lg:hidden text-foreground-100"
-      />
+      <Popover className="flex lg:hidden">
+        <Popover.Button>
+          <List size={32} weight="bold" className="text-foreground-100" />
+        </Popover.Button>
+        <Popover.Panel className="absolute left-0 top-0 w-80 md:w-96 h-screen z-10 flex flex-col bg-dark-100 p-10">
+          {({ close }) => (
+            <>
+              <button
+                className="text-foreground-100 self-end"
+                onClick={() => close()}
+              >
+                <X size={32} weight="bold" />
+              </button>
+              {navigationItems.map((item, index) => (
+                <Popover.Button
+                  as={Link}
+                  href={item.href}
+                  className={clsx(
+                    "py-4 text-foreground-100 text-xl font-semibold capitalize",
+                    {
+                      "text-white": pathname === item.href,
+                    }
+                  )}
+                >
+                  {item.name}
+                </Popover.Button>
+              ))}
+            </>
+          )}
+        </Popover.Panel>
+      </Popover>
     </nav>
   );
 }
