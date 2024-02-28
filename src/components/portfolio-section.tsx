@@ -3,10 +3,8 @@
 import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
 import clsx from "clsx";
-
 import Button from "./button";
 import Project from "./project";
-
 import { projects } from "@/lib/projects";
 
 const featuredProjects = projects.slice(0, 6);

@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
 import clsx from "clsx";
-
 import Image, { StaticImageData } from "next/image";
 
 type ServiceType = {

@@ -2,10 +2,8 @@
 
 import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
-
 import Image from "next/image";
 import clsx from "clsx";
-
 import contractorsImage from "../../public/contractors.jpg";
 
 export default function AboutSection() {

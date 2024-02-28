@@ -1,11 +1,10 @@
 "use client";
+
 import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
 import clsx from "clsx";
-
 import Button from "./button";
 import Service from "./service";
-
 import { services } from "@/lib/services";
 
 export default function ServicesSection() {
