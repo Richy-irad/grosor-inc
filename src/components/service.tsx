@@ -1,3 +1,9 @@
+"use client";
+
+import { useRef } from "react";
+import { useIsVisible } from "@/hooks";
+import clsx from "clsx";
+
 import Image, { StaticImageData } from "next/image";
 
 type ServiceType = {
@@ -7,8 +13,19 @@ type ServiceType = {
 };
 
 export default function Service({ service }: { service: ServiceType }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useIsVisible(ref);
   return (
-    <div className="relative w-full h-[480px]  group">
+    <div
+      ref={ref}
+      className={clsx(
+        "relative w-full h-[480px]  group transition-opacity ease-in duration-700",
+        {
+          "opacity-100": isVisible,
+          "opacity-0": !isVisible,
+        }
+      )}
+    >
       <Image
         src={service.background}
         alt={service.name}

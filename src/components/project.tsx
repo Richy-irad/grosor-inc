@@ -1,3 +1,8 @@
+"use client";
+
+import { useRef } from "react";
+import { useIsVisible } from "@/hooks";
+
 import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
 
@@ -15,8 +20,19 @@ export default function Project({
   project: ProjectType;
   featured: Boolean;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useIsVisible(ref);
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div
+      ref={ref}
+      className={clsx(
+        "flex flex-col gap-4 w-full transition-opacity ease-in duration-700",
+        {
+          "opacity-100": isVisible,
+          "opacity-0": !isVisible,
+        }
+      )}
+    >
       <div className="w-full h-[600px] relative">
         <Image
           src={project.thumbnail}
