@@ -101,6 +101,7 @@ export default function Navbar() {
               </button>
               {navigationItems.map((item, index) => (
                 <Popover.Button
+                  key={index}
                   as={Link}
                   href={item.href}
                   className={clsx(

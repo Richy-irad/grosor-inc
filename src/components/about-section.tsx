@@ -43,15 +43,15 @@ export default function AboutSection() {
         </div>
 
         <p className="text-dark-100 font-normal">
-          At Grosor Inc., we're all about giving you the best. From making
+          At Grosor Inc., we&apos;re all about giving you the best. From making
           unique patios and terraces to fixing up insides and basements, we work
           hard to make your dreams real, putting care into every detail.
         </p>
 
         <p className="text-dark-100 font-normal">
           Ourteam makes sure you get personal attention, making sure we stick to
-          our promise of "Quality Service On Time." It's not just words for us
-          &hyphen; it's our way of always giving you the best construction,
+          our promise of &quot;Quality Service On Time.&quot; It&apos;s not just words for us
+          &hyphen; it&apos;s our way of always giving you the best construction,
           keeping it simple, reliable, and making you happy.
         </p>
       </div>
