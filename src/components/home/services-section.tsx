@@ -3,11 +3,21 @@
 import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
 import clsx from "clsx";
-import Button from "./button";
-import Service from "./service";
+import Button from "../button";
+import Service from "../projects/service";
 import { services } from "@/lib/services";
 
-export default function ServicesSection() {
+type ServicesProps = {
+  header: string;
+  hook: string;
+  buttonText: string;
+};
+
+export default function ServicesSection({
+  header,
+  hook,
+  buttonText,
+}: ServicesProps) {
   const subheaderRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
 
@@ -27,7 +37,7 @@ export default function ServicesSection() {
           )}
         >
           <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
-          expert services
+          {header}
           <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
         </h3>
         <h2
@@ -40,7 +50,7 @@ export default function ServicesSection() {
             }
           )}
         >
-          transform your space.
+          {hook}
         </h2>
       </div>
 
@@ -50,11 +60,7 @@ export default function ServicesSection() {
         ))}
       </div>
 
-      <Button
-        type="primary"
-        href="/#contact-us"
-        buttonText="Get a service now"
-      />
+      <Button type="primary" href="/#contact-us" buttonText={buttonText} />
     </div>
   );
 }

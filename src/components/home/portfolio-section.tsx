@@ -3,13 +3,23 @@
 import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
 import clsx from "clsx";
-import Button from "./button";
-import Project from "./project";
+import Button from "../button";
+import Project from "../projects/project";
 import { projects } from "@/lib/projects";
 
 const featuredProjects = projects.slice(0, 6);
 
-export default function PortfolioSection() {
+type PortfolioProps = {
+  header: string;
+  hook: string;
+  buttonText: string;
+};
+
+export default function PortfolioSection({
+  header,
+  hook,
+  buttonText,
+}: PortfolioProps) {
   const subheaderRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
 
@@ -29,7 +39,7 @@ export default function PortfolioSection() {
           )}
         >
           <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
-          projects
+          {header}
           <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
         </h3>
         <h2
@@ -42,7 +52,7 @@ export default function PortfolioSection() {
             }
           )}
         >
-          portfolio.
+          {hook}
         </h2>
       </div>
 
@@ -52,7 +62,7 @@ export default function PortfolioSection() {
         ))}
       </div>
 
-      <Button type="primary" href="/projects" buttonText="view all projects" />
+      <Button type="primary" href="/projects" buttonText={buttonText} />
     </div>
   );
 }

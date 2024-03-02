@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "header": "Bienvenue à Grosor Inc.",
+    "hook": "Où vous trouvez des constructeurs de qualité",
+    "tagline": "Service de qualité à temps",
+    "buttonText": "Appelez le (514) 572 -5067"
+  },
+  "about": {
+    "header": "Apprendre à nous connaître",
+    "hook": "Engagé à seulement un service de haute qualité",
+    "paragraph_1": "Chez Grosor Inc., il s&apos;agit de vous donner le meilleur. De la fabrication de patios et de terrasses uniques à la réparation des intérieurs et des sous-sols, nous travaillons dur pour rendre vos rêves réels, en mettant soin de chaque détail.",
+    "paragraph_2": "Notre équipe s&apos;assure que vous obtenez une attention personnelle, en nous assurant que nous respectons notre promesse de &quot;service de qualité à temps&quot;. Ce ne sont pas seulement des mots pour nous et un trait d&apos;union ; c&apos;est notre façon de toujours vous donner la meilleure construction, de la garder simple, fiable et de vous rendre heureux."
+  },
+  "services": {
+    "header": "Services d&apos;experts",
+    "hook": "Transformez votre espace",
+    "buttonText": "Obtenez un service maintenant"
+  },
+  "portfolio": {
+    "header": "Projets",
+    "hook": "Portfolio",
+    "buttonText": "Voir tous les projets"
+  },
+  "contact_us": {
+    "header": "Contactez-nous",
+    "hook": "Votre projet est beaucoup plus simple que vous ne le pensez"
+  }
+}

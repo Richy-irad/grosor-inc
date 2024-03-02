@@ -4,10 +4,15 @@ import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
 import clsx from "clsx";
 import Image from "next/image";
-import ContactDetails from "./contact-details";
-import heroBackground from "../../public/hero-background.jpg";
+import ContactDetails from "../contact-details";
+import heroBackground from "../../../public/hero-background.jpg";
 
-export default function ContactSection() {
+type ContactDetailsProps = {
+  header: string;
+  hook: string;
+};
+
+export default function ContactSection({ header, hook }: ContactDetailsProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useIsVisible(ref);
   return (
@@ -38,11 +43,11 @@ export default function ContactSection() {
         <div className="flex flex-col gap-6 text-center text-dark-100 px-5 md:p-0 md:text-white">
           <h3 className="text-xl font-medium uppercase flex gap-6 items-center self-center">
             <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
-            get in touch with us
+            {header}
             <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
           </h3>
           <h1 className="md:w-[405px] text-3.5xl font-bold capitalize">
-            your project is much simpler than you think.
+            {hook}
           </h1>
         </div>
 
