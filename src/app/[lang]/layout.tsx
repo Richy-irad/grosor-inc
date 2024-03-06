@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 import Topbar from "@/components/topbar";
@@ -35,6 +36,7 @@ export default async function RootLayout({
         <Topbar lang={params.lang} />
         <Navbar navigationItems={navigationItems} moto={moto} />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
