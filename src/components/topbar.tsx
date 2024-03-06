@@ -6,19 +6,23 @@ import Button from "./button";
 const contacts = [
   {
     icon: <Clock size={20} weight="bold" className="text-foreground-100" />,
-    text: "Monday - Friday (9:00 am - 21:00 pm)",
+    enText: "Monday - Friday (9:00 am - 21:00 pm)",
+    frText: "Lundi - Vendredi (9h00 - 21h00)",
   },
   {
     icon: <Envelope size={20} weight="bold" className="text-foreground-100" />,
-    text: "grosorinc2@gmail.com",
+    enText: "grosorinc2@gmail.com",
+    frText: "grosorinc2@gmail.com",
   },
   {
     icon: <Phone size={20} weight="bold" className="text-foreground-100" />,
-    text: "(514) 57205067",
+    enText: "(514) 572-5067",
+    frText: "(514) 572-5067",
   },
   {
     icon: <MapPin size={20} weight="bold" className="text-foreground-100" />,
-    text: "60 Rue du Docteur-Lortie, St. Polycarpe, J0P1X0, QC",
+    enText: "60 Rue du Docteur-Lortie, St. Polycarpe, J0P1X0, QC",
+    frText: "60 Rue du Docteur-Lortie, St. Polycarpe, J0P1X0, QC",
   },
 ];
 
@@ -37,7 +41,9 @@ export default function Topbar({ lang }: { lang: string }) {
         {contacts.map((item, index) => (
           <div key={index} className="flex gap-2.5 items-center p-3">
             {item.icon}
-            <p className="text-sm">{item.text}</p>
+            <p className="text-sm">
+              {lang === "en" ? <>{item.enText}</> : <>{item.frText}</>}
+            </p>
           </div>
         ))}
       </div>
