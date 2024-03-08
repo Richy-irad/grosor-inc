@@ -16,6 +16,19 @@
   }
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: "#F4F4F4";
+}
+
+html::-webkit-scrollbar {
+  width: 3px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #9d9d9d;
+}
+
 body {
   background-color: white;
 }
