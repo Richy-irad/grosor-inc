@@ -1,65 +1,56 @@
-"use client";
-
-import { useRef } from "react";
-import { useIsVisible } from "@/hooks";
-import clsx from "clsx";
 import Button from "../button";
 import Project from "../projects/project";
-import { projects } from "@/lib/projects";
-
-const featuredProjects = projects.slice(0, 6);
+import Header from "../header";
+import { getTranslatedProjects } from "@/lib/translations/projects/projects";
+import { StaticImageData } from "next/image";
+import { Key } from "react";
 
 type PortfolioProps = {
   header: string;
   hook: string;
   buttonText: string;
+  lang: string;
 };
 
-export default function PortfolioSection({
+export default async function PortfolioSection({
   header,
   hook,
   buttonText,
+  lang,
 }: PortfolioProps) {
-  const subheaderRef = useRef<HTMLDivElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
+  let featuredHeader = "";
+  const projects = await getTranslatedProjects(lang);
 
-  const isSubheaderVisible = useIsVisible(subheaderRef);
-  const isHeaderVisible = useIsVisible(headerRef);
+  const featuredProjects = projects.slice(0, 6);
+
+  if (lang === "en") {
+    featuredHeader = "featured project";
+  } else {
+    featuredHeader = "projet en vedette";
+  }
   return (
     <div className="flex flex-col gap-8 items-center py-10 md:py-20 w-full">
-      <div className="flex flex-col gap-4 items-center">
-        <h3
-          ref={subheaderRef}
-          className={clsx(
-            "text-xl font-medium uppercase flex gap-6 items-center self-center transition-opacity ease-in duration-700",
-            {
-              "opacity-100": isSubheaderVisible,
-              "opacity-0": !isSubheaderVisible,
-            }
-          )}
-        >
-          <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
-          {header}
-          <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
-        </h3>
-        <h2
-          ref={headerRef}
-          className={clsx(
-            "text-3xl md:text-5xl text-dark-100 font-semibold capitalize transition-opacity ease-in duration-700",
-            {
-              "opacity-100": isHeaderVisible,
-              "opacity-0": !isHeaderVisible,
-            }
-          )}
-        >
-          {hook}
-        </h2>
-      </div>
+      <Header header={header} hook={hook} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
-        {featuredProjects.map((project, index) => (
-          <Project key={index} project={project} featured={true} />
-        ))}
+        {featuredProjects.map(
+          (
+            project: {
+              title: string;
+              thumbnail: StaticImageData;
+              gallery: StaticImageData[];
+              tags: string[];
+            },
+            index: Key | null | undefined
+          ) => (
+            <Project
+              key={index}
+              project={project}
+              featured={true}
+              featuredHeader={featuredHeader}
+            />
+          )
+        )}
       </div>
 
       <Button type="primary" href="/projects" buttonText={buttonText} />

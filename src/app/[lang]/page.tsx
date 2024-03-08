@@ -48,6 +48,7 @@ export default async function Home({ params }: { params: Params }) {
         header={portfolio.header}
         hook={portfolio.hook}
         buttonText={portfolio.buttonText}
+        lang={lang}
       />
 
       {/* contact us */}

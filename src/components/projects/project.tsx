@@ -15,9 +15,11 @@ type ProjectType = {
 export default function Project({
   project,
   featured,
+  featuredHeader,
 }: {
   project: ProjectType;
   featured: Boolean;
+  featuredHeader: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useIsVisible(ref);
@@ -49,7 +51,7 @@ export default function Project({
             { flex: featured, hidden: !featured }
           )}
         >
-          featured project
+          {featuredHeader}
           <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
         </span>
         <h2 className="text-xl md:text-2xl text-dark-100 font-semibold capitalize">
