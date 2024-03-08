@@ -53,10 +53,10 @@ export default function HeroSection({
             {header}
             <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
           </h3>
-          <h1 className="w-full md:w-[683px] text-5xl md:text-6xl font-bold uppercase">
+          <h1 className="w-full md:w-[683px] text-4xl md:text-6xl font-bold uppercase">
             {hook}
           </h1>
-          <p className="text-3.5xl font-medium capitalize">{tagline}</p>
+          <p className="text-3xl font-medium capitalize">{tagline}</p>
         </div>
         {/* call to action */}
         <Button type="primary" href="/#contact-us" buttonText={buttonText} />
