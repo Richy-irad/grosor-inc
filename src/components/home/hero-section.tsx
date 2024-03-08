@@ -47,7 +47,7 @@ export default function HeroSection({
       </div>
       {/* the content */}
       <div className="absolute flex flex-col gap-16 items-center w-full px-5 md:p-0">
-        <div className="flex flex-col gap-6 text-center text-white">
+        <div className="flex flex-col gap-6 items-center text-center text-white w-full">
           <h3 className="text-xl font-medium uppercase flex gap-6 items-center self-center">
             <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
             {header}
