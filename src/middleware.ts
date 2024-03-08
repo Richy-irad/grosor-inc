@@ -5,10 +5,10 @@ import { NextRequest, NextResponse } from "next/server";
 let locales = ["fr", "en"];
 
 function getLocale() {
-  let headers = { "accept-language": "en, fr" };
+  let headers = { "accept-language": "fr, en" };
 
   let languages = new Negotiator({ headers }).languages();
-  let defaultLocale = "en";
+  let defaultLocale = "fr";
 
   return match(languages, locales, defaultLocale);
 }

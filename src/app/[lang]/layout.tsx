@@ -34,7 +34,11 @@ export default async function RootLayout({
     <html className="!scroll-smooth">
       <body className={`${inter.className} w-full min-h-screen h-full`}>
         <Topbar lang={params.lang} />
-        <Navbar navigationItems={navigationItems} moto={moto} />
+        <Navbar
+          navigationItems={navigationItems}
+          moto={moto}
+          currentLang={params.lang}
+        />
         {children}
         <Analytics />
         <Footer lang={params.lang} />
