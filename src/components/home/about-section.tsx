@@ -4,9 +4,21 @@ import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
 import Image from "next/image";
 import clsx from "clsx";
-import contractorsImage from "../../public/contractors.jpg";
+import contractorsImage from "../../../public/contractors.jpg";
 
-export default function AboutSection() {
+type AboutProps = {
+  header: string;
+  hook: string;
+  paragraph_1: string;
+  paragraph_2: string;
+};
+
+export default function AboutSection({
+  header,
+  hook,
+  paragraph_1,
+  paragraph_2,
+}: AboutProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useIsVisible(ref);
   return (
@@ -34,26 +46,17 @@ export default function AboutSection() {
       <div className="flex flex-col gap-8 p-4 md:p-0 md:pe-10 lg:pe-20">
         <div className="flex flex-col gap-4">
           <h3 className="uppercase text-dark-100 text-xl font-medium flex gap-6 items-center">
-            get to know us
+            {header}
             <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
           </h3>
           <h2 className="text-3xl md:text-5xl text-dark-100 font-semibold capitalize">
-            Committed to only high quality service.
+            {hook}
           </h2>
         </div>
 
-        <p className="text-dark-100 font-normal">
-          At Grosor Inc., we&apos;re all about giving you the best. From making
-          unique patios and terraces to fixing up insides and basements, we work
-          hard to make your dreams real, putting care into every detail.
-        </p>
+        <p className="text-dark-100 font-normal">{paragraph_1}</p>
 
-        <p className="text-dark-100 font-normal">
-          Ourteam makes sure you get personal attention, making sure we stick to
-          our promise of &quot;Quality Service On Time.&quot; It&apos;s not just words for us
-          &hyphen; it&apos;s our way of always giving you the best construction,
-          keeping it simple, reliable, and making you happy.
-        </p>
+        <p className="text-dark-100 font-normal">{paragraph_2}</p>
       </div>
     </div>
   );

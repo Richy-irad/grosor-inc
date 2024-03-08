@@ -1,9 +1,9 @@
-import pationServiceImage from "../../public/patio-service-image.jpg";
-import terraceServiceImage from "../../public/terrace-service-image.jpg";
-import interiorFinishServiceImage from "../../public/interior-design-service-image.jpg";
-import basementsServiceImage from "../../public/basements-service-image.jpg";
+import pationServiceImage from "../../../../public/patio-service-image.jpg";
+import terraceServiceImage from "../../../../public/terrace-service-image.jpg";
+import interiorFinishServiceImage from "../../../../public/interior-design-service-image.jpg";
+import basementsServiceImage from "../../../../public/basements-service-image.jpg";
 
-export const services = [
+const services = [
   {
     name: "patio",
     background: pationServiceImage,
@@ -29,3 +29,5 @@ export const services = [
       "Unlock the full potential of your basement with Grosor Inc.'s finishing solutions. We specialize in transforming underutilized spaces into cozy and versatile areas, incorporating waterproofing and insulation for enduring comfort. Trust us to convert your basement into a valuable extension of your living space.",
   },
 ];
+
+export default services;

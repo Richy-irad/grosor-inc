@@ -1,16 +1,16 @@
-import project2Thumbnail from "../../public/project-2/thumbnail.jpeg";
-import project3Thumbnail from "../../public/project-3/thumbnail.jpeg";
-import project4Thumbnail from "../../public/project-4/thumbnail.jpeg";
-import project5Thumbnail from "../../public/project-5/thumbnail.jpeg";
-import project6Thumbnail from "../../public/project-6/thumbnail.jpeg";
-import project7Thumbnail from "../../public/project-7/thumbnail.jpeg";
-import project11Thumbnail from "../../public/project-11/thumbnail.jpeg";
-import project13Thumbnail from "../../public/project-13/thumbnail.jpeg";
-import project14Thumbnail from "../../public/project-14/thumbnail.jpeg";
-import project15Thumbnail from "../../public/project-15/thumbnail.jpeg";
-import project16Thumbnail from "../../public/project-16/thumbnail.jpeg";
+import project2Thumbnail from "../../../../public/project-2/thumbnail.jpeg";
+import project3Thumbnail from "../../../../public/project-3/thumbnail.jpeg";
+import project4Thumbnail from "../../../../public/project-4/thumbnail.jpeg";
+import project5Thumbnail from "../../../../public/project-5/thumbnail.jpeg";
+import project6Thumbnail from "../../../../public/project-6/thumbnail.jpeg";
+import project7Thumbnail from "../../../../public/project-7/thumbnail.jpeg";
+import project11Thumbnail from "../../../../public/project-11/thumbnail.jpeg";
+import project13Thumbnail from "../../../../public/project-13/thumbnail.jpeg";
+import project14Thumbnail from "../../../../public/project-14/thumbnail.jpeg";
+import project15Thumbnail from "../../../../public/project-15/thumbnail.jpeg";
+import project16Thumbnail from "../../../../public/project-16/thumbnail.jpeg";
 
-export const projects = [
+const projects = [
   {
     title: "Interior finish of a restaurant",
     thumbnail: project6Thumbnail,
@@ -80,3 +80,5 @@ export const projects = [
     tags: [],
   },
 ];
+
+export default projects;
