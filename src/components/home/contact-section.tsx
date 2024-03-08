@@ -10,9 +10,14 @@ import heroBackground from "../../../public/hero-background.jpg";
 type ContactDetailsProps = {
   header: string;
   hook: string;
+  lang: string;
 };
 
-export default function ContactSection({ header, hook }: ContactDetailsProps) {
+export default function ContactSection({
+  header,
+  hook,
+  lang,
+}: ContactDetailsProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useIsVisible(ref);
   return (
@@ -52,7 +57,7 @@ export default function ContactSection({ header, hook }: ContactDetailsProps) {
         </div>
 
         {/* the tabs */}
-        <ContactDetails />
+        <ContactDetails lang={lang} />
       </div>
     </div>
   );

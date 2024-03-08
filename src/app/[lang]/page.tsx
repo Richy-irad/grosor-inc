@@ -52,7 +52,7 @@ export default async function Home({ params }: { params: Params }) {
       />
 
       {/* contact us */}
-      <ContactSection header={contact_us.header} hook={contact_us.hook} />
+      <ContactSection header={contact_us.header} hook={contact_us.hook} lang={lang} />
     </main>
   );
 }

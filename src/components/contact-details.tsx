@@ -6,21 +6,24 @@ const contacts = [
   {
     icon: <Envelope size={24} weight="bold" className="text-white" />,
     text: "grosorinc2@gmail.com",
-    descriptor: "email",
+    descriptorEn: "email",
+    descriptorFr: "courriel",
   },
   {
     icon: <Phone size={24} weight="bold" className="text-white" />,
     text: "(514) 57205067",
-    descriptor: "phone",
+    descriptorEn: "phone",
+    descriptorFr: "téléphone",
   },
   {
     icon: <MapPin size={24} weight="bold" className="text-white" />,
     text: "60 Rue du Docteur-Lortie, St. Polycarpe, J0P1X0, QC",
-    descriptor: "our office",
+    descriptorEn: "our office",
+    descriptorFr: "notre bureau",
   },
 ];
 
-export default function ContactDetails() {
+export default function ContactDetails({ lang }: { lang: string }) {
   return (
     <div className="flex flex-col items-center w-full px-5 lg:w-[894px]">
       <div className="flex flex-col gap-6">
@@ -34,7 +37,11 @@ export default function ContactDetails() {
                 {contact.text}
               </p>
               <p className="text-dark-200 md:text-light-200 font-normal capitalize">
-                {contact.descriptor}
+                {lang === "en" ? (
+                  <>{contact.descriptorEn}</>
+                ) : (
+                  <>{contact.descriptorFr}</>
+                )}
               </p>
             </div>
           </div>

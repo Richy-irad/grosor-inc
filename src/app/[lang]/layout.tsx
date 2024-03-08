@@ -37,7 +37,7 @@ export default async function RootLayout({
         <Navbar navigationItems={navigationItems} moto={moto} />
         {children}
         <Analytics />
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );
