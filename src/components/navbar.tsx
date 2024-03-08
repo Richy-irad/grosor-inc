@@ -133,6 +133,30 @@ export default async function Navbar({
                   {item.name}
                 </Popover.Button>
               ))}
+              <button
+                type="button"
+                className={clsx(
+                  "self-start py-4 text-foreground-100 text-base font-semibold capitalize",
+                  {
+                    "text-white": currentLang === "fr",
+                  }
+                )}
+                onClick={() => changeLanguage("fr")}
+              >
+                Francais
+              </button>
+              <button
+                type="button"
+                className={clsx(
+                  "self-start py-4 text-foreground-100 text-base font-semibold capitalize",
+                  {
+                    "text-white": currentLang === "en",
+                  }
+                )}
+                onClick={() => changeLanguage("en")}
+              >
+                English
+              </button>
             </>
           )}
         </Popover.Panel>
