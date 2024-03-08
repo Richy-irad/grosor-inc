@@ -39,6 +39,7 @@ export default async function Home({ params }: { params: Params }) {
         header={services.header}
         hook={services.hook}
         buttonText={services.buttonText}
+        lang={lang}
       />
 
       {/* portfolio */}
