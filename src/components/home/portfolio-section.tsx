@@ -42,6 +42,7 @@ export default async function PortfolioSection({
               thumbnail: StaticImageData;
               gallery: StaticImageData[];
               tags: string[];
+              href: string;
             },
             index: Key | null | undefined
           ) => (
