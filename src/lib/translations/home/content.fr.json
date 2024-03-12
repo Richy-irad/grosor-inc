@@ -3,7 +3,8 @@
     "header": "Bienvenue à Grosor Inc.",
     "hook": "Où vous trouvez des constructeurs de qualité",
     "tagline": "Service de qualité à temps",
-    "buttonText": "Appelez le (514) 572 -5067"
+    "buttonText": "Appelez le (514) 572 -5067",
+    "ctaHref": "/fr/#contact-us"
   },
   "about": {
     "header": "Apprendre à nous connaître",
@@ -14,12 +15,14 @@
   "services": {
     "header": "Services d'experts",
     "hook": "Transformez votre espace",
-    "buttonText": "Obtenez un service maintenant"
+    "buttonText": "Obtenez un service maintenant",
+    "ctaHref": "/fr/#contact-us"
   },
   "portfolio": {
     "header": "Projets",
     "hook": "Portfolio",
-    "buttonText": "Voir tous les projets"
+    "buttonText": "Voir tous les projets",
+    "ctaHref": "/fr/projects"
   },
   "contact_us": {
     "header": "Contactez-nous",

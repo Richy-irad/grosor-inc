@@ -3,7 +3,8 @@
     "header": "Welcome to Grosor Inc.",
     "hook": "Where you find quality builders",
     "tagline": "Quality service on time",
-    "buttonText": "Call (514) 572-5067"
+    "buttonText": "Call (514) 572-5067",
+    "ctaHref": "/en/#contact-us"
   },
   "about": {
     "header": "Get to know us",
@@ -14,12 +15,14 @@
   "services": {
     "header": "Expert services",
     "hook": "Transform your space",
-    "buttonText": "Get a service now"
+    "buttonText": "Get a service now",
+    "ctaHref": "/en/#contact-us"
   },
   "portfolio": {
     "header": "Projects",
     "hook": "Portfolio",
-    "buttonText": "View all projects"
+    "buttonText": "View all projects",
+    "ctaHref": "/en/projects"
   },
   "contact_us": {
     "header": "Get in touch with us",

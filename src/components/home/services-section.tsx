@@ -10,6 +10,7 @@ type ServicesProps = {
   hook: string;
   buttonText: string;
   lang: string;
+  ctaHref: string;
 };
 
 export default async function ServicesSection({
@@ -17,6 +18,7 @@ export default async function ServicesSection({
   hook,
   buttonText,
   lang,
+  ctaHref,
 }: ServicesProps) {
   const services = await getTranslatedServices(lang);
   return (
@@ -38,7 +40,7 @@ export default async function ServicesSection({
         )}
       </div>
 
-      <Button type="primary" href="/#contact-us" buttonText={buttonText} />
+      <Button type="primary" href={ctaHref} buttonText={buttonText} />
     </div>
   );
 }

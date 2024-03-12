@@ -24,6 +24,7 @@ export default async function Home({ params }: { params: Params }) {
         hook={hero.hook}
         tagline={hero.tagline}
         buttonText={hero.buttonText}
+        ctaHref={hero.ctaHref}
       />
 
       {/* about */}
@@ -40,6 +41,7 @@ export default async function Home({ params }: { params: Params }) {
         hook={services.hook}
         buttonText={services.buttonText}
         lang={lang}
+        ctaHref={services.ctaHref}
       />
 
       {/* portfolio */}
@@ -49,10 +51,15 @@ export default async function Home({ params }: { params: Params }) {
         hook={portfolio.hook}
         buttonText={portfolio.buttonText}
         lang={lang}
+        ctaHref={portfolio.ctaHref}
       />
 
       {/* contact us */}
-      <ContactSection header={contact_us.header} hook={contact_us.hook} lang={lang} />
+      <ContactSection
+        header={contact_us.header}
+        hook={contact_us.hook}
+        lang={lang}
+      />
     </main>
   );
 }
