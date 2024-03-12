@@ -42,6 +42,7 @@ export default async function Projects({ params }: { params: LangParams }) {
               thumbnail: StaticImageData;
               gallery: StaticImageData[];
               tags: string[];
+              href: string;
             },
             index: Key | null | undefined
           ) => (
@@ -50,6 +51,7 @@ export default async function Projects({ params }: { params: LangParams }) {
               project={project}
               featured={false}
               featuredHeader={featuredHeader}
+              lang={lang}
             />
           )
         )}

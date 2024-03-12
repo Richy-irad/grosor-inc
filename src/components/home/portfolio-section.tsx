@@ -10,6 +10,7 @@ type PortfolioProps = {
   hook: string;
   buttonText: string;
   lang: string;
+  ctaHref: string;
 };
 
 export default async function PortfolioSection({
@@ -17,6 +18,7 @@ export default async function PortfolioSection({
   hook,
   buttonText,
   lang,
+  ctaHref,
 }: PortfolioProps) {
   let featuredHeader = "";
   const projects = await getTranslatedProjects(lang);
@@ -40,6 +42,7 @@ export default async function PortfolioSection({
               thumbnail: StaticImageData;
               gallery: StaticImageData[];
               tags: string[];
+              href: string;
             },
             index: Key | null | undefined
           ) => (
@@ -48,12 +51,13 @@ export default async function PortfolioSection({
               project={project}
               featured={true}
               featuredHeader={featuredHeader}
+              lang={lang}
             />
           )
         )}
       </div>
 
-      <Button type="primary" href="/projects" buttonText={buttonText} />
+      <Button type="primary" href={ctaHref} buttonText={buttonText} />
     </div>
   );
 }

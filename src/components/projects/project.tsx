@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { useIsVisible } from "@/hooks";
 import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
@@ -8,6 +9,7 @@ import clsx from "clsx";
 type ProjectType = {
   title: string;
   thumbnail: StaticImageData;
+  href: string;
   gallery: StaticImageData[];
   tags: string[];
 };
@@ -16,13 +18,21 @@ export default function Project({
   project,
   featured,
   featuredHeader,
+  lang,
 }: {
   project: ProjectType;
   featured: Boolean;
   featuredHeader: string;
+  lang: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useIsVisible(ref);
+  let buttonContext = "";
+  if (lang === "en") {
+    buttonContext = "view project details";
+  } else {
+    buttonContext = "voir les détails du projet";
+  }
   return (
     <div
       ref={ref}
@@ -58,6 +68,17 @@ export default function Project({
           {project.title}
         </h2>
       </div>
+      {project.href && (
+        <>
+          <Link
+            className="p-4 font-semibold shrink-0 capitalize bg-dark-200 text-white self-start"
+            href={project.href}
+            target="_blank"
+          >
+            {buttonContext}
+          </Link>
+        </>
+      )}
     </div>
   );
 }

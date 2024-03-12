@@ -12,6 +12,7 @@ type HeroProps = {
   hook: string;
   tagline: string;
   buttonText: string;
+  ctaHref: string;
 };
 
 export default function HeroSection({
@@ -19,6 +20,7 @@ export default function HeroSection({
   hook,
   tagline,
   buttonText,
+  ctaHref,
 }: HeroProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isHeroVisible = useIsVisible(ref);
@@ -59,7 +61,7 @@ export default function HeroSection({
           <p className="text-3xl font-medium capitalize">{tagline}</p>
         </div>
         {/* call to action */}
-        <Button type="primary" href="/#contact-us" buttonText={buttonText} />
+        <Button type="primary" href={ctaHref} buttonText={buttonText} />
       </div>
     </div>
   );
