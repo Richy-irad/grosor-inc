@@ -5,13 +5,13 @@ import { Envelope, Phone, MapPin } from "@phosphor-icons/react";
 const contacts = [
   {
     icon: <Envelope size={24} weight="bold" className="text-white" />,
-    text: "grosorinc2@gmail.com",
+    text: "grosorinc2022@gmail.com",
     descriptorEn: "email",
     descriptorFr: "courriel",
   },
   {
     icon: <Phone size={24} weight="bold" className="text-white" />,
-    text: "(514) 57205067",
+    text: "(514) 572-5067",
     descriptorEn: "phone",
     descriptorFr: "téléphone",
   },
