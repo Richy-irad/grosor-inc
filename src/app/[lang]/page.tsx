@@ -5,12 +5,9 @@ import PortfolioSection from "@/components/home/portfolio-section";
 import ContactSection from "@/components/home/contact-section";
 
 import { getHomeTranslateedContent } from "@/lib/translations/home/content";
+import { LangParams } from "@/lib/types";
 
-type Params = {
-  lang: string;
-};
-
-export default async function Home({ params }: { params: Params }) {
+export default async function Home({ params }: { params: LangParams }) {
   const { lang } = params;
 
   const { hero, about, services, portfolio, contact_us } =

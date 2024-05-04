@@ -1,12 +1,8 @@
-import Project from "@/components/projects/project";
-
-import { getTranslatedProjects } from "@/lib/translations/projects/projects";
-import { StaticImageData } from "next/image";
 import { Key } from "react";
+import Project from "@/components/projects/project";
+import { getTranslatedProjects } from "@/lib/translations/projects/projects";
+import { LangParams, ProjectType } from "@/lib/types";
 
-type LangParams = {
-  lang: string;
-};
 export default async function Projects({ params }: { params: LangParams }) {
   const { lang } = params;
   const projects = await getTranslatedProjects(lang);
@@ -35,26 +31,15 @@ export default async function Projects({ params }: { params: LangParams }) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
-        {projects.map(
-          (
-            project: {
-              title: string;
-              thumbnail: StaticImageData;
-              gallery: StaticImageData[];
-              tags: string[];
-              href: string;
-            },
-            index: Key | null | undefined
-          ) => (
-            <Project
-              key={index}
-              project={project}
-              featured={false}
-              featuredHeader={featuredHeader}
-              lang={lang}
-            />
-          )
-        )}
+        {projects.map((project: ProjectType, index: Key | null | undefined) => (
+          <Project
+            key={index}
+            project={project}
+            featured={false}
+            featuredHeader={featuredHeader}
+            lang={lang}
+          />
+        ))}
       </div>
     </main>
   );

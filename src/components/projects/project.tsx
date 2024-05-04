@@ -3,16 +3,9 @@
 import { useRef } from "react";
 import Link from "next/link";
 import { useIsVisible } from "@/hooks";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import clsx from "clsx";
-
-type ProjectType = {
-  title: string;
-  thumbnail: StaticImageData;
-  href: string;
-  gallery: StaticImageData[];
-  tags: string[];
-};
+import { ProjectType } from "@/lib/types";
 
 export default function Project({
   project,
@@ -68,17 +61,12 @@ export default function Project({
           {project.title}
         </h2>
       </div>
-      {project.href && (
-        <>
-          <Link
-            className="p-4 font-semibold shrink-0 capitalize bg-dark-200 text-white self-start"
-            href={project.href}
-            target="_blank"
-          >
-            {buttonContext}
-          </Link>
-        </>
-      )}
+      <Link
+        className="p-4 font-semibold shrink-0 capitalize bg-dark-200 text-white self-start"
+        href={`/projects/${project.slug}`}
+      >
+        {buttonContext}
+      </Link>
     </div>
   );
 }
