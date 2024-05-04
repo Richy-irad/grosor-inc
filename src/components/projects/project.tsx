@@ -63,7 +63,7 @@ export default function Project({
       </div>
       <Link
         className="p-4 font-semibold shrink-0 capitalize bg-dark-200 text-white self-start"
-        href={`/projects/${project.slug}`}
+        href={`/${lang}/projects/${project.slug}`}
       >
         {buttonContext}
       </Link>

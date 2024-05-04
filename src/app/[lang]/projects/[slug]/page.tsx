@@ -8,7 +8,6 @@ import { DynamicParams, ProjectType } from "@/lib/types";
 
 export default async function ProjectDetails({ params }: DynamicParams) {
   const project = await getTranslatedProject(params.lang, params.slug);
-  console.log(typeof project.thumbnail === typeof project.gallery[1]);
   return (
     <main className="flex flex-col py-10 md:py-20 gap-8">
       <h1 className="px-2 text-xl md:text-6xl font-semibold capitalize">

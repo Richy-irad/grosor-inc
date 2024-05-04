@@ -1,7 +1,6 @@
-import pationServiceImage from "../../../../public/patio-service-image.jpg";
-import terraceServiceImage from "../../../../public/terrace-service-image.jpg";
-import interiorFinishServiceImage from "../../../../public/interior-design-service-image.jpg";
-import basementsServiceImage from "../../../../public/basements-service-image.jpg";
+import pationServiceImage from "../../../../public/project-2/thumbnail.jpeg";
+import deckServiceImage from "../../../../public/project-15/thumbnail.jpeg";
+import interiorFinishServiceImage from "../../../../public/project-7/thumbnail.jpeg";
 
 const services = [
   {
@@ -12,7 +11,7 @@ const services = [
   },
   {
     name: "Deck",
-    background: terraceServiceImage,
+    background: deckServiceImage,
     description:
       "Rehaussez votre expérience de vie grâce à notre expertise en construction de decks. Grosor Inc. fabrique des conceptions de decks innovantes qui non seulement améliorent l'esthétique de votre propriété, mais offrent également un espace confortable pour se détendre. Notre finition méticuleuse assure un équilibre parfait de style et de durabilité.",
   },

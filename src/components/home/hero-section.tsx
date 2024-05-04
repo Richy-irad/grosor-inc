@@ -5,7 +5,7 @@ import { useIsVisible } from "@/hooks";
 import Image from "next/image";
 import clsx from "clsx";
 import Button from "../button";
-import heroBackground from "../../../public/hero-background.jpg";
+import heroBackground from "../../../public/project-2/image-5.jpeg";
 
 type HeroProps = {
   header: string;

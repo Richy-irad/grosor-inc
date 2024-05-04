@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
 import Image from "next/image";
 import clsx from "clsx";
-import contractorsImage from "../../../public/contractors.jpg";
+import coverImage from "../../../public/project-6/image-7.jpeg";
 
 type AboutProps = {
   header: string;
@@ -36,7 +36,7 @@ export default function AboutSection({
       {/* the image */}
       <div className="hidden md:flex basis-full md:basis-7/12 shrink-0 grow-0">
         <Image
-          src={contractorsImage}
+          src={coverImage}
           alt="contractors"
           sizes="100vw"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
