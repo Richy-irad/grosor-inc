@@ -33,16 +33,12 @@ const services = [
     fr: "patio",
   },
   {
-    en: "terrace",
-    fr: "terrasse",
+    en: "deck",
+    fr: "deck",
   },
   {
     en: "interior finish",
     fr: "finition intérieure",
-  },
-  {
-    en: "basements",
-    fr: "sous-sols",
   },
 ];
 
