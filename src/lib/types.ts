@@ -18,3 +18,9 @@ export type DynamicParams = {
     lang: string;
   };
 };
+
+export type ServiceType = {
+  name: string;
+  background: StaticImageData;
+  description: string;
+};

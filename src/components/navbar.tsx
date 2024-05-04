@@ -17,7 +17,7 @@ type Navbarprops = {
   currentLang: string;
 };
 
-export default async function Navbar({
+export default function Navbar({
   navigationItems,
   moto,
   currentLang,
