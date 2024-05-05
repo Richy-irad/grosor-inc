@@ -6,13 +6,13 @@ import Button from "./button";
 const contacts = [
   {
     icon: <Clock size={20} weight="bold" className="text-foreground-100" />,
-    enText: "Monday - Friday (9:00 am - 21:00 pm)",
+    enText: "Monday - Friday (8:00 am - 16:00 pm)",
     frText: "Lundi - Vendredi (9h00 - 21h00)",
   },
   {
     icon: <Envelope size={20} weight="bold" className="text-foreground-100" />,
-    enText: "grosorinc2@gmail.com",
-    frText: "grosorinc2@gmail.com",
+    enText: "grosorinc2022@gmail.com",
+    frText: "grosorinc2022@gmail.com",
   },
   {
     icon: <Phone size={20} weight="bold" className="text-foreground-100" />,

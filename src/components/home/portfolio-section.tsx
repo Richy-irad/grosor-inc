@@ -1,9 +1,10 @@
+import { Key } from "react";
 import Button from "../button";
 import Project from "../projects/project";
 import Header from "../header";
 import { getTranslatedProjects } from "@/lib/translations/projects/projects";
 import { StaticImageData } from "next/image";
-import { Key } from "react";
+import { ProjectType } from "@/lib/types";
 
 type PortfolioProps = {
   header: string;
@@ -36,16 +37,7 @@ export default async function PortfolioSection({
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
         {featuredProjects.map(
-          (
-            project: {
-              title: string;
-              thumbnail: StaticImageData;
-              gallery: StaticImageData[];
-              tags: string[];
-              href: string;
-            },
-            index: Key | null | undefined
-          ) => (
+          (project: ProjectType, index: Key | null | undefined) => (
             <Project
               key={index}
               project={project}

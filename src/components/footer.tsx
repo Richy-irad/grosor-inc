@@ -1,25 +1,26 @@
 "use client";
 
 import Image from "next/image";
-import { Envelope, MapPin, Phone } from "@phosphor-icons/react";
+import Link from "next/link";
+import { Envelope, InstagramLogo, MapPin, Phone } from "@phosphor-icons/react";
 
 import logo from "../../public/logo.png";
 
 const contacts = [
   {
-    icon: <MapPin size={32} weight="bold" className="text-foreground-100" />,
+    icon: <MapPin size={24} weight="bold" className="text-foreground-100" />,
     text: "60 Rue du Docteur-Lortie, St. Polycarpe, J0P1X0, QC",
     descriptorEn: "our office",
     descriptorFr: "notre bureau",
   },
   {
-    icon: <Envelope size={32} weight="bold" className="text-foreground-100" />,
+    icon: <Envelope size={24} weight="bold" className="text-foreground-100" />,
     text: "grosorinc2@gmail.com",
     descriptorEn: "email",
     descriptorFr: "courriel",
   },
   {
-    icon: <Phone size={32} weight="bold" className="text-foreground-100" />,
+    icon: <Phone size={24} weight="bold" className="text-foreground-100" />,
     text: "(514) 57205067",
     descriptorEn: "phone",
     descriptorFr: "téléphone",
@@ -32,16 +33,12 @@ const services = [
     fr: "patio",
   },
   {
-    en: "terrace",
-    fr: "terrasse",
+    en: "deck",
+    fr: "deck",
   },
   {
     en: "interior finish",
     fr: "finition intérieure",
-  },
-  {
-    en: "basements",
-    fr: "sous-sols",
   },
 ];
 
@@ -71,6 +68,14 @@ export default function Footer({ lang }: { lang: string }) {
           <span className="text-2xl capitalize font-semibold">Grosor Inc.</span>
         </div>
         <p className="text-light-100">{content}</p>
+        <div className="flex gap-4">
+          <Link
+            href="https://www.instagram.com/habitations_dor/"
+            className="text-foreground-100"
+          >
+            <InstagramLogo size={24} weight="bold" />
+          </Link>
+        </div>
       </div>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-12 lg:gap-24 w-full">
@@ -99,7 +104,7 @@ export default function Footer({ lang }: { lang: string }) {
                 {item.icon}
                 <div className="flex flex-col gap-2">
                   <p>{item.text}</p>
-                  <p className="text-light-200 font-medium capitalize">
+                  <p className="text-[#c6c6c6] font-medium capitalize">
                     {lang === "en" ? (
                       <>{item.descriptorEn}</>
                     ) : (

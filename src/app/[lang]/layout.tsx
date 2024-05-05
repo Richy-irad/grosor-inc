@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import { Analytics } from "@vercel/analytics/react";
@@ -9,11 +8,6 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 import { getTranslatedNavItems } from "@/lib/translations/navbar/navitems";
-
-export const metadata: Metadata = {
-  title: "Grosor Inc",
-  description: "Where you find quality builders",
-};
 
 export default async function RootLayout({
   children,

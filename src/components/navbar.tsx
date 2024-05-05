@@ -17,7 +17,7 @@ type Navbarprops = {
   currentLang: string;
 };
 
-export default async function Navbar({
+export default function Navbar({
   navigationItems,
   moto,
   currentLang,
@@ -56,7 +56,11 @@ export default async function Navbar({
           className="hidden md:flex flex-col gap-2.5 py-4 text-foreground-100 capitalize font-semibold"
         >
           <span className="text-2xl">Grosor Inc.</span>
-          <span>{moto}</span>
+          <div className="flex flex-col gap-0.5">
+            <span>{moto}</span>
+            <span className="text-sm">RBQ No. 5839-9338-01</span>
+            <span className="text-sm">Habitation D&apos;OR</span>
+          </div>
         </Link>
       </div>
 

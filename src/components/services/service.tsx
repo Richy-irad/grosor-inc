@@ -3,13 +3,8 @@
 import { useRef } from "react";
 import { useIsVisible } from "@/hooks";
 import clsx from "clsx";
-import Image, { StaticImageData } from "next/image";
-
-type ServiceType = {
-  name: string;
-  background: StaticImageData;
-  description: string;
-};
+import Image from "next/image";
+import { ServiceType } from "@/lib/types";
 
 export default function Service({ service }: { service: ServiceType }) {
   const ref = useRef<HTMLDivElement>(null);

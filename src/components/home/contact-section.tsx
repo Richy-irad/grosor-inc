@@ -22,6 +22,7 @@ export default function ContactSection({
   const isVisible = useIsVisible(ref);
   return (
     <div
+      id="contact-us"
       ref={ref}
       className={clsx(
         "flex items-center w-full py-5 md:p-0 md:h-[790px] md:bg-dark-200/75 transition-opacity ease-in duration-700",
