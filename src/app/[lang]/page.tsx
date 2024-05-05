@@ -1,11 +1,30 @@
+import type { Metadata, ResolvingMetadata } from "next";
 import HeroSection from "@/components/home/hero-section";
 import AboutSection from "@/components/home/about-section";
 import ServicesSection from "@/components/home/services-section";
 import PortfolioSection from "@/components/home/portfolio-section";
 import ContactSection from "@/components/home/contact-section";
-
 import { getHomeTranslateedContent } from "@/lib/translations/home/content";
 import { LangParams } from "@/lib/types";
+
+export async function generateMetadata(
+  { params }: { params: LangParams },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { lang } = params;
+
+  if (lang === "en") {
+    return {
+      title: "Grosor Inc",
+      description: "Where you find Quality Builders",
+    };
+  }
+
+  return {
+    title: "Grosor Inc",
+    description: "Où vous trouvez des constructeurs de qualité",
+  };
+}
 
 export default async function Home({ params }: { params: LangParams }) {
   const { lang } = params;

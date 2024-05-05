@@ -1,7 +1,27 @@
+import type { Metadata, ResolvingMetadata } from "next";
 import { Key } from "react";
 import Project from "@/components/projects/project";
 import { getTranslatedProjects } from "@/lib/translations/projects/projects";
 import { LangParams, ProjectType } from "@/lib/types";
+
+export async function generateMetadata(
+  { params }: { params: LangParams },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { lang } = params;
+
+  if (lang === "en") {
+    return {
+      title: "Our projects",
+      description: "View all our projects",
+    };
+  }
+
+  return {
+    title: "Nos projets",
+    description: "Voir tous les projets",
+  };
+}
 
 export default async function Projects({ params }: { params: LangParams }) {
   const { lang } = params;

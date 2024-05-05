@@ -1,10 +1,23 @@
+import type { Metadata, ResolvingMetadata } from "next";
 import Image, { StaticImageData } from "next/image";
 import {
   getTranslatedProject,
   getTranslatedProjects,
 } from "@/lib/translations/projects/projects";
-
 import { DynamicParams, ProjectType } from "@/lib/types";
+
+export async function generateMetadata(
+  { params }: DynamicParams,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { lang, slug } = params;
+
+  const project = await getTranslatedProject(lang, slug);
+
+  return {
+    title: project.title,
+  };
+}
 
 export default async function ProjectDetails({ params }: DynamicParams) {
   const project = await getTranslatedProject(params.lang, params.slug);
