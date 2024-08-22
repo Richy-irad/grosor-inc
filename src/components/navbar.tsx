@@ -53,7 +53,7 @@ export default function Navbar({
         </div>
         <Link
           href={home}
-          className="hidden md:flex flex-col gap-2.5 py-4 text-foreground-100 capitalize font-semibold"
+          className="hidden md:flex flex-col gap-2.5 py-4 text-foreground-100 normal-case font-semibold"
         >
           <span className="text-2xl">Grosor Inc.</span>
           <div className="flex flex-col gap-0.5">
@@ -71,7 +71,7 @@ export default function Navbar({
             key={index}
             href={item.href}
             className={clsx(
-              "px-6 py-4 text-foreground-100 text-base font-semibold capitalize",
+              "px-6 py-4 text-foreground-100 text-base font-semibold normal-case",
               {
                 "text-white": pathname === item.href,
               }
@@ -128,7 +128,7 @@ export default function Navbar({
                   as={Link}
                   href={item.href}
                   className={clsx(
-                    "py-4 text-foreground-100 text-xl font-semibold capitalize",
+                    "py-4 text-foreground-100 text-xl font-semibold normal-case",
                     {
                       "text-white": pathname === item.href,
                     }
@@ -140,7 +140,7 @@ export default function Navbar({
               <button
                 type="button"
                 className={clsx(
-                  "self-start py-4 text-foreground-100 text-base font-semibold capitalize",
+                  "self-start py-4 text-foreground-100 text-base font-semibold normal-case",
                   {
                     "text-white": currentLang === "fr",
                   }
@@ -152,7 +152,7 @@ export default function Navbar({
               <button
                 type="button"
                 className={clsx(
-                  "self-start py-4 text-foreground-100 text-base font-semibold capitalize",
+                  "self-start py-4 text-foreground-100 text-base font-semibold normal-case",
                   {
                     "text-white": currentLang === "en",
                   }

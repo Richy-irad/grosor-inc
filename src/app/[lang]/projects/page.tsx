@@ -32,11 +32,11 @@ export default async function Projects({ params }: { params: LangParams }) {
   if (lang === "en") {
     featuredHeader = "featured project";
     content =
-      "Revitalize your home with our comprehensive home renovation and house building services.";
+      "Transform your home with our full range of renovation and building services.";
   } else {
     featuredHeader = "project en vedette";
     content =
-      "Revitalisez votre maison avec notre rénovation et notre maison complètes les services de construction.";
+      "Transformez votre maison grâce à notre gamme complète de services de rénovation et de construction.";
   }
 
   return (

@@ -106,7 +106,7 @@ import proj16Img11 from "../../../../public/project-16/image-11.jpeg";
 const projects = [
   {
     slug: "project-6",
-    title: "Finition intérieur commercial",
+    title: "Finition d'un intérieur commercial",
     thumbnail: project6Thumbnail,
     gallery: [
       proj6Img1,
@@ -124,7 +124,7 @@ const projects = [
   },
   {
     slug: "project-16",
-    title: "Finition d'un sous-sol au complet",
+    title: "Sous-sol aménagé",
     thumbnail: project16Thumbnail,
     gallery: [
       proj16Img1,
@@ -175,7 +175,7 @@ const projects = [
   {
     slug: "project-5",
     title:
-      "Finition d'un sous-sol avec une salle familiale, une chambre à coucher et une salle de bain en céramique",
+      "Sous-sol aménagé avec un salon, une chambre à coucher et une salle de bain.",
     thumbnail: project5Thumbnail,
     gallery: [
       proj5Img1,
@@ -226,7 +226,7 @@ const projects = [
   },
   {
     slug: "project-7",
-    title: "Finition d'un sous-sol au complet",
+    title: "Sous-sol aménagé",
     thumbnail: project7Thumbnail,
     gallery: [
       proj7Img1,
@@ -240,7 +240,7 @@ const projects = [
   },
   {
     slug: "project-13",
-    title: "Rénovation d'un sous-sol",
+    title: "Sous-sol aménagé",
     thumbnail: project13Thumbnail,
     gallery: [
       proj13Img1,

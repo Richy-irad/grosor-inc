@@ -13,13 +13,13 @@ const services = [
     name: "Deck",
     background: deckServiceImage,
     description:
-      "Elevate your living experience with our deck construction expertise. Grosor Inc. crafts innovative deck designs that not only enhance your property's aesthetics but also provide a comfortable space to unwind. Our meticulous finishing ensures a perfect balance of style and durability.",
+      "Elevate your living experience with Grosor Inc.&#39;s expert deck construction. We create stunning decks that elevate your property’s aesthetic while offering a welcoming space for gathering, relaxation, and creating lasting memories. Our attention to detail ensures a perfect blend of style and durability, turning your outdoor area into a beautifully functional retreat.",
   },
   {
     name: "interior finish",
     background: interiorFinishServiceImage,
     description:
-      "Experience the artistry of home interiors with Grosor Inc.'s finishing service. Whether it's a complete remodeling or a subtle touch-up, our attention to detail ensures impeccable results. Let us bring warmth, style, and functionality to every corner of your home.",
+      "Discover the artistry of home interiors with Grosor Inc.&#39;s finishing services. From full remodels to elegant touch-ups, our meticulous attention to detail delivers impeccable results. Let us bring warmth, style, and functionality to every corner of your home.",
   },
 ];
 

@@ -12,14 +12,14 @@ export async function generateMetadata(
   if (lang === "en") {
     return {
       title: "Contact us",
-      description: "Get in Touch with us",
+      description: "Get in Touch with us. Bringing Your Project to Life Is Simpler Than You Think!",
     };
   }
 
   return {
     title: "Contactez-nous",
     description:
-      "Contactez-nous. Votre projet est beaucoup plus simple que vous ne le pensez",
+      "Contactez-nous. La réalisation de votre projet est plus simple que vous le pensez!",
   };
 }
 

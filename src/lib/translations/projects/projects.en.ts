@@ -106,7 +106,7 @@ import proj16Img11 from "../../../../public/project-16/image-11.jpeg";
 const projects = [
   {
     slug: "project-6",
-    title: "Commercial interior finishing",
+    title: "Commercial Interior Finishing",
     thumbnail: project6Thumbnail,
     gallery: [
       proj6Img1,
@@ -124,7 +124,7 @@ const projects = [
   },
   {
     slug: "project-16",
-    title: "Finishing an entire basement",
+    title: "Finished Basement",
     thumbnail: project16Thumbnail,
     gallery: [
       proj16Img1,
@@ -144,7 +144,7 @@ const projects = [
   },
   {
     slug: "project-15",
-    title: "Installing a composite deck",
+    title: "Installing a Composite Deck",
     thumbnail: project15Thumbnail,
     gallery: [
       proj15Img1,
@@ -226,7 +226,7 @@ const projects = [
   },
   {
     slug: "project-7",
-    title: "Finishing an entire basement",
+    title: "Finished Basement",
     thumbnail: project7Thumbnail,
     gallery: [
       proj7Img1,
@@ -240,7 +240,7 @@ const projects = [
   },
   {
     slug: "project-13",
-    title: "Renovation of a basement",
+    title: "Basement Renovation",
     thumbnail: project13Thumbnail,
     gallery: [
       proj13Img1,
@@ -257,7 +257,7 @@ const projects = [
   },
   {
     slug: "project-14",
-    title: "Finishing an entire basement",
+    title: "Finished Basement",
     thumbnail: project14Thumbnail,
     gallery: [
       proj14Img1,
@@ -272,7 +272,7 @@ const projects = [
   },
   {
     slug: "project-11",
-    title: "Renovation and Extension of a Patio for a residential house",
+    title: "Renovation and Extension of a Patio of a Residential Home",
     thumbnail: project11Thumbnail,
     gallery: [
       proj11Img1,

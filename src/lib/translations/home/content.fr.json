@@ -1,16 +1,16 @@
 {
   "hero": {
-    "header": "Bienvenue à Grosor Inc.",
-    "hook": "Où vous trouvez des constructeurs de qualité",
-    "tagline": "Service de qualité à temps",
-    "buttonText": "Appelez le (514) 572 -5067",
+    "header": "Bienvenue chez Grosor Inc.",
+    "hook": "Transformez votre espace avec des experts en rénovation",
+    "tagline": "La qualité et le savoir-faire à chaque projet",
+    "buttonText": "Veuillez nous joindre au (555)-555-5555",
     "ctaHref": "/fr/#contact-us"
   },
   "about": {
-    "header": "Apprendre à nous connaître",
-    "hook": "Engagé à seulement un service de haute qualité",
-    "paragraph_1": "Chez Grosor Inc., il s'agit de vous donner le meilleur. De la fabrication de patios et de terrasses uniques à la réparation des intérieurs et des sous-sols, nous travaillons dur pour rendre vos rêves réels, en mettant soin de chaque détail.",
-    "paragraph_2": "Notre équipe s'assure que vous obtenez une attention personnelle, en nous assurant que nous respectons notre promesse de 'service de qualité à temps'. Ce ne sont pas seulement des mots pour nous et un trait d'union c'est notre façon de toujours vous donner la meilleure construction, de la garder simple, fiable et de vous rendre heureux."
+    "header": "Faites connaissance avec nous",
+    "hook": "Dédié à fournir un service de haute qualité",
+    "paragraph_1": "Chez Grosor Inc., nous nous engageons envers l'excellence. Que ce soit pour créer des patios et des terrasses uniques ou pour rénover des intérieurs et des sous-sols, nous travaillons sans relâche pour concrétiser vos rêves, en apportant une attention méticuleuse à chaque détail.",
+    "paragraph_2": "Notre équipe s&#39;engage à fournir un service personnalisé et à respecter notre promesse de «service de qualité dans les délais ». Pour nous, il ne s&#39;agit pas simplement d'un slogan, mais d&#39;une véritable norme d&#39;excellence. Nous mettons tout en œuvre pour que le processus soit simple, fiable et toujours axé sur votre satisfaction."
   },
   "services": {
     "header": "Services d'experts",
@@ -20,12 +20,12 @@
   },
   "portfolio": {
     "header": "Projets",
-    "hook": "Portfolio",
+    "hook": "Quelques réalisations",
     "buttonText": "Voir tous les projets",
     "ctaHref": "/fr/projects"
   },
   "contact_us": {
     "header": "Contactez-nous",
-    "hook": "Votre projet est beaucoup plus simple que vous ne le pensez"
+    "hook": "La réalisation de votre projet est plus simple que vous le pensez!"
   }
 }

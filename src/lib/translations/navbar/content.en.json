@@ -1,18 +1,18 @@
 [
   {
-    "name": "home",
+    "name": "Home",
     "href": "/en"
   },
   {
-    "name": "about us",
+    "name": "About us",
     "href": "/en/#about"
   },
   {
-    "name": "projects",
+    "name": "Projects",
     "href": "/en/projects"
   },
   {
-    "name": "contact us",
+    "name": "Contact us",
     "href": "/en/contact-us"
   }
 ]

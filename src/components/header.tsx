@@ -35,7 +35,7 @@ export default function Header({
       <h2
         ref={headerRef}
         className={clsx(
-          "text-3xl md:text-5xl text-dark-100 font-semibold capitalize transition-opacity ease-in duration-700",
+          "text-3xl md:text-5xl text-dark-100 font-semibold normal-case transition-opacity ease-in duration-700",
           {
             "opacity-100": isHeaderVisible,
             "opacity-0": !isHeaderVisible,

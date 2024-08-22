@@ -58,7 +58,7 @@ export default function HeroSection({
           <h1 className="w-full md:w-[683px] text-4xl md:text-6xl font-bold uppercase">
             {hook}
           </h1>
-          <p className="text-3xl font-medium capitalize">{tagline}</p>
+          <p className="text-3xl font-medium normal-case">{tagline}</p>
         </div>
         {/* call to action */}
         <Button type="primary" href={ctaHref} buttonText={buttonText} />

@@ -23,7 +23,7 @@ export default async function ProjectDetails({ params }: DynamicParams) {
   const project = await getTranslatedProject(params.lang, params.slug);
   return (
     <main className="flex flex-col py-10 md:py-20 gap-8">
-      <h1 className="px-2 text-xl md:text-6xl font-semibold capitalize">
+      <h1 className="px-2 text-xl md:text-6xl font-semibold normal-case">
         {project.title}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
