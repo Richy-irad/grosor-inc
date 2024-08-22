@@ -20,9 +20,9 @@ export default async function RootLayout({
   let moto;
 
   if (params.lang === "en") {
-    moto = "general construction contractor";
+    moto = "General Construction Contractor";
   } else {
-    moto = "entrepreneur général en construction";
+    moto = "Entrepreneur général en construction";
   }
   return (
     <html className="!scroll-smooth">
