@@ -36,7 +36,7 @@ export default function Topbar({ lang }: { lang: string }) {
   }
 
   return (
-    <div className=" hidden lg:flex justify-between px-20 w-full">
+    <div className=" hidden lg:flex justify-start px-20 w-full">
       <div className="flex">
         {contacts.map((item, index) => (
           <div key={index} className="flex gap-2.5 items-center p-3">
@@ -48,7 +48,7 @@ export default function Topbar({ lang }: { lang: string }) {
         ))}
       </div>
       {/* quotation link*/}
-      <Button type="secondary" href="/contact-us" buttonText={buttonText} />
+      {/* <Button type="secondary" href="/contact-us" buttonText={buttonText} /> */}
     </div>
   );
 }
