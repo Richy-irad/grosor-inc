@@ -16,13 +16,13 @@ export async function generateMetadata(
   if (lang === "en") {
     return {
       title: "Grosor Inc",
-      description: "Where you find Quality Builders",
+      description: "Where skilled Craftsmanship Begins",
     };
   }
 
   return {
     title: "Grosor Inc",
-    description: "Où vous trouvez des constructeurs de qualité",
+    description: "Transformez votre espace avec des experts en rénovation",
   };
 }
 

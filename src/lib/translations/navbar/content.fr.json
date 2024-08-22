@@ -1,18 +1,18 @@
 [
   {
-    "name": "accueil",
+    "name": "Accueil",
     "href": "/fr"
   },
   {
-    "name": "À propos de nous",
+    "name": "À propos",
     "href": "/fr/#about"
   },
   {
-    "name": "projets",
+    "name": "Projets",
     "href": "/fr/projects"
   },
   {
-    "name": "contactez-nous",
+    "name": "Contactez-nous",
     "href": "/fr/contact-us"
   }
 ]

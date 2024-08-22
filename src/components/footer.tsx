@@ -47,10 +47,10 @@ export default function Footer({ lang }: { lang: string }) {
 
   if (lang === "en") {
     content =
-      "Grosor Inc. is your trusted partner in mastering the art of home improvement. With a dedicated, we bring years of experience to seamlessly craft patios, terraces, and interior and basement finishes. Committed to delivering high-quality service on time, Grosor Inc. transforms your visions into personalized, aesthetically pleasing, and functional realities. Your home deserves the expertise and passion we bring to every project.";
+      "Grosor Inc. is your trusted partner in home improvement excellence. With years of dedicated experience, we specialize in creating beautifully crafted patios, terraces, and interior and basement finishes. Our commitment to delivering high-quality service ensures that your vision is brought to life—on time and with meticulous attention to detail. At Grosor Inc., we transform your ideas into stunning, functional spaces that enhance your home. Trust us to bring the expertise and passion your home deserves.";
   } else {
     content =
-      "Grosor Inc. est votre partenaire de confiance dans la maîtrise de l'art de la maison l'amélioration. Avec un dévouement, nous apportons des années d'expérience à des patios, des terrasses et des finitions intérieures et au sous-sol de manière transparente. Engagé à fournir un service de haute qualité à temps, Grosor Inc. transforme vos visions en personnalisées, esthétiquement agréables, et réalités fonctionnelles. Votre maison mérite l'expertise et la passion que nous apporter à chaque projet.";
+      "Grosor Inc. est l’entreprise qu’il vous faut ! Avec des années d’expérience, nous nous spécialisons dans la construction et la pose de patio, (qu’elle soit en bois ou en matériaux composites) ainsi que des finitions intérieures et au sous-sol. Nous occupons de la construction et de la finition complète de votre projet, pour que vous puissent profiter des installations belles et durables. Nous vous assurons la perfection dans chaque détail, tout en respectant les délais promis. N’hésitez pas à nous contacter pour toute question concernant nos services!";
   }
   return (
     <div className="flex flex-col lg:flex-row gap-6 md:gap-12 lg:gap-24 bg-dark-100 px-5 md:px-10 lg:px-20 py-10">

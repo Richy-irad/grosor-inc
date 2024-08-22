@@ -1,20 +1,20 @@
 {
   "hero": {
     "header": "Welcome to Grosor Inc.",
-    "hook": "Where you find quality builders",
-    "tagline": "Quality service on time",
+    "hook": "Where skilled craftsmanship begins",
+    "tagline": "Quality Service on Time",
     "buttonText": "Call (514) 572-5067",
     "ctaHref": "/en/#contact-us"
   },
   "about": {
     "header": "Get to know us",
-    "hook": "Committed to only high quality service",
-    "paragraph_1": "At Grosor Inc., we're all about giving you the best. From making unique patios and terraces to fixing up insides and basements, we work hard to make your dreams real, putting care into every detail.",
-    "paragraph_2": "Ourteam makes sure you get personal attention, making sure we stick to our promise of 'Quality Service On Time'. It's not just words for us - it's our way of always giving you the best construction, keeping it simple, reliable, and making you happy."
+    "hook": "Committed to high quality service",
+    "paragraph_1": "At Grosor Inc., we’re dedicated to delivering excellence. Whether crafting unique patios and terraces or renovating interiors and basements, we work hard to bring your dreams to life, paying meticulous attention to every detail.",
+    "paragraph_2": "Our team is committed to providing personalized service and adhering to our promise of &quot;Quality Service on Time.&quot; For us, this isn’t just a slogan—it’s our standard for exceptional craftsmanship. We strive to keep the process straightforward, reliable, and always focused on your satisfaction."
   },
   "services": {
     "header": "Expert services",
-    "hook": "Transform your space",
+    "hook": "Transform your Space",
     "buttonText": "Get a service now",
     "ctaHref": "/en/#contact-us"
   },
@@ -26,6 +26,6 @@
   },
   "contact_us": {
     "header": "Get in touch with us",
-    "hook": "Your project is much simpler than you think"
+    "hook": "Bringing your project to life is much simpler than you think"
   }
 }

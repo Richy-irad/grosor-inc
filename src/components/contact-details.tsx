@@ -19,7 +19,7 @@ const contacts = [
     icon: <MapPin size={24} weight="bold" className="text-white" />,
     text: "60 Rue du Docteur-Lortie, St. Polycarpe, J0P1X0, QC",
     descriptorEn: "our office",
-    descriptorFr: "notre bureau",
+    descriptorFr: "Adresse",
   },
 ];
 
@@ -28,7 +28,7 @@ export default function ContactDetails({ lang }: { lang: string }) {
     <div className="flex flex-col items-center w-full px-5 lg:w-[894px]">
       <div className="flex flex-col gap-6">
         {contacts.map((contact, index) => (
-          <div key={index} className="flex gap-4 items-center">
+          <div key={index} className="flex gap-4 items-start lg:items-center">
             <div className="p-2 5 rounded bg-foreground-200 text-white">
               {contact.icon}
             </div>

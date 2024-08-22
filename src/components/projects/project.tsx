@@ -22,9 +22,9 @@ export default function Project({
   const isVisible = useIsVisible(ref);
   let buttonContext = "";
   if (lang === "en") {
-    buttonContext = "view project details";
+    buttonContext = "View project details";
   } else {
-    buttonContext = "voir les détails du projet";
+    buttonContext = "Voir les détails du projet";
   }
   return (
     <div
@@ -57,12 +57,12 @@ export default function Project({
           {featuredHeader}
           <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
         </span>
-        <h2 className="text-xl md:text-2xl text-dark-100 font-semibold capitalize">
+        <h2 className="text-xl md:text-2xl text-dark-100 font-semibold normal-case">
           {project.title}
         </h2>
       </div>
       <Link
-        className="p-4 font-semibold shrink-0 capitalize bg-dark-200 text-white self-start"
+        className="p-4 font-semibold shrink-0 normal-case bg-dark-200 text-white self-start"
         href={`/${lang}/projects/${project.slug}`}
       >
         {buttonContext}

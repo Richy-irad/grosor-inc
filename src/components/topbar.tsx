@@ -30,9 +30,9 @@ export default function Topbar({ lang }: { lang: string }) {
   let buttonText;
 
   if (lang === "en") {
-    buttonText = "Get quotation now";
+    buttonText = "Get a Quote";
   } else {
-    buttonText = "obtenir un devis maintenant";
+    buttonText = "Obtenez une soumission";
   }
 
   return (
