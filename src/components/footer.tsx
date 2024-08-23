@@ -21,7 +21,7 @@ const contacts = [
   },
   {
     icon: <Phone size={24} weight="bold" className="text-foreground-100" />,
-    text: "(514) 57205067",
+    text: "(514) 572-5067",
     descriptorEn: "phone",
     descriptorFr: "téléphone",
   },
@@ -29,16 +29,16 @@ const contacts = [
 
 const services = [
   {
-    en: "patio",
-    fr: "patio",
+    en: "Patio",
+    fr: "Patio",
   },
   {
-    en: "deck",
-    fr: "deck",
+    en: "Deck",
+    fr: "Deck",
   },
   {
-    en: "interior finish",
-    fr: "finition intérieure",
+    en: "Interior finish",
+    fr: "Finition intérieure",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Footer({ lang }: { lang: string }) {
           <h3 className="text-xl text-foreground-100 capitalize font-semibold">
             services
           </h3>
-          <div className="flex flex-col gap-3 text-light-100 text-base font-semibold capitalize">
+          <div className="flex flex-col gap-3 text-light-100 text-base font-semibold normal-case">
             {services.map((service, index) => (
               <p key={index}>
                 {lang === "en" ? <>{service.en}</> : <>{service.fr}</>}

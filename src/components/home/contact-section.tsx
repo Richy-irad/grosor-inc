@@ -52,7 +52,7 @@ export default function ContactSection({
             {header}
             <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
           </h3>
-          <h1 className="md:w-[405px] text-3.5xl font-bold capitalize">
+          <h1 className="md:w-[405px] text-3.5xl font-bold normal-case">
             {hook}
           </h1>
         </div>

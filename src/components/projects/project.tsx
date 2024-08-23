@@ -50,7 +50,7 @@ export default function Project({
       <div className="flex flex-col gap-2 items-start px-5">
         <span
           className={clsx(
-            "text-base font-medium capitalize text-dark-200 flex gap-6 items-center",
+            "text-base font-medium normal-case text-dark-200 flex gap-6 items-center",
             { flex: featured, hidden: !featured }
           )}
         >

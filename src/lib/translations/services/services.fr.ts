@@ -13,13 +13,13 @@ const services = [
     name: "Deck",
     background: deckServiceImage,
     description:
-      "Élevez votre espace extérieur avec nos experts en construction de terrasses qui prennent le temps d&#39;écouter vos besoins et vos envies, afin de créer une terrasse sur mesure qui répond à vos attentes Qu&#39;il s&#39;agisse de garantir un lieu idéal pour recevoir vos proches, profiter de moments de détente ou organiser des fêtes mémorables, la terrasse parfaite vous attend.",
+      "Élevez votre espace extérieur avec nos experts en construction de terrasses qui prennent le temps d'écouter vos besoins et vos envies, afin de créer une terrasse sur mesure qui répond à vos attentes Qu'il s'agisse de garantir un lieu idéal pour recevoir vos proches, profiter de moments de détente ou organiser des fêtes mémorables, la terrasse parfaite vous attend.",
   },
   {
     name: "finition intérieure",
     background: interiorFinishServiceImage,
     description:
-      "Découvrez l&#39;art de finition intérieure grâce aux services de finition de Grosor Inc. Qu&#39;il s'agisse de rénovations complètes ou de retouches élégantes, notre souci du détail nous permet d&#39;obtenir des résultats impeccables. Laissez-nous apporter de la chaleur, style et fonctionnalité à chaque coin de votre maison.",
+      "Découvrez l'art de finition intérieure grâce aux services de finition de Grosor Inc. Qu'il s'agisse de rénovations complètes ou de retouches élégantes, notre souci du détail nous permet d'obtenir des résultats impeccables. Laissez-nous apporter de la chaleur, style et fonctionnalité à chaque coin de votre maison.",
   },
 ];
 
