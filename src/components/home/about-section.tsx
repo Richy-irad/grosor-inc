@@ -49,7 +49,7 @@ export default function AboutSection({
             {header}
             <hr className="block w-[53px] h-[3px] bg-foreground-100 rounded-full" />
           </h3>
-          <h2 className="text-3xl md:text-5xl text-dark-100 font-semibold capitalize">
+          <h2 className="text-3xl md:text-5xl text-dark-100 font-semibold normal-case">
             {hook}
           </h2>
         </div>

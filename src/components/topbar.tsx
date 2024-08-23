@@ -7,7 +7,7 @@ const contacts = [
   {
     icon: <Clock size={20} weight="bold" className="text-foreground-100" />,
     enText: "Monday - Friday (8:00 am - 16:00 pm)",
-    frText: "Lundi - Vendredi (9h00 - 21h00)",
+    frText: "Lundi - Vendredi (8h00 - 16h00)",
   },
   {
     icon: <Envelope size={20} weight="bold" className="text-foreground-100" />,

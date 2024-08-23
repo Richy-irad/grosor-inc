@@ -144,7 +144,7 @@ const projects = [
   },
   {
     slug: "project-15",
-    title: "Installation d'un Deck en planche de composite",
+    title: "Installation d'un deck en planche de composite",
     thumbnail: project15Thumbnail,
     gallery: [
       proj15Img1,
@@ -160,7 +160,7 @@ const projects = [
   },
   {
     slug: "project-2",
-    title: "Rénovation et Extension d'un Patio en Planches Composites",
+    title: "Rénovation et extension d'un patio en planches composites",
     thumbnail: project2Thumbnail,
     gallery: [
       proj2Img1,
@@ -192,7 +192,7 @@ const projects = [
   },
   {
     slug: "project-3",
-    title: "Rénovation et Extension d'un Patio en Planches Composites",
+    title: "Rénovation et extension d'un patio en planches composites",
     thumbnail: project3Thumbnail,
     gallery: [
       proj3Img1,
@@ -208,7 +208,7 @@ const projects = [
   },
   {
     slug: "project-4",
-    title: "Rénovation et Extension d'un Patio et d'un Deck",
+    title: "Rénovation et extension d'un patio et d'un deck",
     thumbnail: project4Thumbnail,
     gallery: [
       proj4Img1,
@@ -272,7 +272,7 @@ const projects = [
   },
   {
     slug: "project-11",
-    title: "Rénovation et Extension d'un Patio pour une maison d'habitation",
+    title: "Rénovation et extension d'un patio pour une maison d'habitation",
     thumbnail: project11Thumbnail,
     gallery: [
       proj11Img1,
