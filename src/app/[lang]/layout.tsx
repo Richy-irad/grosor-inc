@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "../globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 import Topbar from "@/components/topbar";
@@ -35,6 +36,7 @@ export default async function RootLayout({
         />
         {children}
         <Analytics />
+        <SpeedInsights />
         <Footer lang={params.lang} />
       </body>
     </html>
