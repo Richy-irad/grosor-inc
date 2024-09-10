@@ -11,8 +11,8 @@ const contacts = [
   },
   {
     icon: <Envelope size={20} weight="bold" className="text-foreground-100" />,
-    enText: "grosorinc2022@gmail.com",
-    frText: "grosorinc2022@gmail.com",
+    enText: "info@grosorinc.ca",
+    frText: "info@grosorinc.ca",
   },
   {
     icon: <Phone size={20} weight="bold" className="text-foreground-100" />,

@@ -15,7 +15,7 @@ const contacts = [
   },
   {
     icon: <Envelope size={24} weight="bold" className="text-foreground-100" />,
-    text: "grosorinc2@gmail.com",
+    text: "info@grosorinc.ca",
     descriptorEn: "email",
     descriptorFr: "courriel",
   },
