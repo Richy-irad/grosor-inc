@@ -5,7 +5,7 @@ import { Envelope, Phone, MapPin } from "@phosphor-icons/react";
 const contacts = [
   {
     icon: <Envelope size={24} weight="bold" className="text-white" />,
-    text: "grosorinc2022@gmail.com",
+    text: "info@grosorinc.ca",
     descriptorEn: "email",
     descriptorFr: "courriel",
   },
